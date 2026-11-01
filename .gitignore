@@ -1,0 +1,24 @@
+# Arquivos de VM e imagens (pesados e desnecessários)
+*.iso
+*.ova
+*.vdi
+*.vmdk
+*.7z
+
+# Segredos: NUNCA versionar
+.env
+*.key
+*.pem
+id_*
+credentials*
+secrets*
+
+# Capturas de tráfego e dumps (podem conter dados sensíveis)
+*.pcap
+*.pcapng
+*.dmp
+
+# Sistema
+.DS_Store
+Thumbs.db
+
