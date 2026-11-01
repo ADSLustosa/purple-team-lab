@@ -1,24 +1,41 @@
-# Arquivos de VM e imagens (pesados e desnecessários)
+# ── Imagens de VM e instaladores (pesados e desnecessários) ──
 *.iso
 *.ova
+*.ovf
 *.vdi
 *.vmdk
+*.vbox-prev
 *.7z
 
-# Segredos: NUNCA versionar
+# ── Segredos: NUNCA versionar ──
 .env
+.env.*
 *.key
 *.pem
-id_*
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
 credentials*
 secrets*
+*.kdbx
 
-# Capturas de tráfego e dumps (podem conter dados sensíveis)
+# ── Capturas de tráfego e dumps (podem conter dados sensíveis) ──
 *.pcap
 *.pcapng
 *.dmp
+*.mem
+*.raw
 
-# Sistema
+# ── Amostras de malware: nunca em repositório público ──
+samples/
+malware/
+
+# ── Sistema e editores ──
 .DS_Store
 Thumbs.db
-
+desktop.ini
+.vscode/
+.idea/
+__pycache__/
+*.pyc
